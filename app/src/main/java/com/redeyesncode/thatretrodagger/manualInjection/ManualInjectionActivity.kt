@@ -3,6 +3,8 @@ package com.redeyesncode.thatretrodagger.manualInjection
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.redeyesncode.thatretrodagger.R
+import com.redeyesncode.thatretrodagger.dagger.MyDaggerComponent
+import dagger.internal.DaggerGenerated
 
 class ManualInjectionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,11 +13,28 @@ class ManualInjectionActivity : AppCompatActivity() {
 
         // Giving the manual dependency injection to it. by creating objects
         initManualInjection()
-        initContructorInjection()
+        initConstructorInjection()
+        InjectDagger()
+
+    }
+
+    class InjectDagger {
+        // Simple Dagger Builder
+        // Builder class is not coming
+
+//        :(
+
+
+
+
+
+
+
     }
 
     private fun initManualInjection() {
         val mainConnector = MainConnector()
+        // Bigger code base ? this will be tedious task for you trust me !
 
         mainConnector.signUpAndSendEmail("redeyesncode@gmail.com","~~~222~~~","Android")
 
@@ -23,7 +42,7 @@ class ManualInjectionActivity : AppCompatActivity() {
 
     }
 
-    private fun initContructorInjection() {
+    private fun initConstructorInjection() {
         val  constructorInjection = ConstructorInjection(EmailProducer(), SignupProducer())
         constructorInjection.signUpAndSendEmail("redeyesncode@gmail.com","~~~222~~~","Android")
 

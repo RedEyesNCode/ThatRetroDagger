@@ -1,14 +1,16 @@
-package com.redeyesncode.thatretrodagger.manualInjection
+package com.redeyesncode.thatretrodagger.dagger
 
 import android.util.Log
 import com.redeyesncode.thatretrodagger.Constants
 import javax.inject.Inject
 
-class EmailProducer  {
+class InjectedProducer @Inject constructor() {
 
-    fun sendEmailUser(email:String ){
+    fun sendInjectedEmail(email:String ){
         Log.i(Constants.DEV_SHEFALI,"Success Email sended to $email")
 
 
     }
+
+
 }
