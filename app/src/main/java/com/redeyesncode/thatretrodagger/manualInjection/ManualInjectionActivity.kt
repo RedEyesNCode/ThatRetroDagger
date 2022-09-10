@@ -9,9 +9,23 @@ class ManualInjectionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_manual_injection)
 
-        // Giving the manual dependency injection to it.
+        // Giving the manual dependency injection to it. by creating objects
+        initManualInjection()
+        initContructorInjection()
+    }
 
-        
+    private fun initManualInjection() {
+        val mainConnector = MainConnector()
+
+        mainConnector.signUpAndSendEmail("redeyesncode@gmail.com","~~~222~~~","Android")
+
+
+
+    }
+
+    private fun initContructorInjection() {
+        val  constructorInjection = ConstructorInjection(EmailProducer(), SignupProducer())
+        constructorInjection.signUpAndSendEmail("redeyesncode@gmail.com","~~~222~~~","Android")
 
 
     }
