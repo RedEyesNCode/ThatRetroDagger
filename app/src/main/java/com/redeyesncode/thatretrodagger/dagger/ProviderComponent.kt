@@ -6,11 +6,13 @@ import com.redeyesncode.thatretrodagger.manualInjection.SignupProducer
 import dagger.Component
 import dagger.Module
 import dagger.Provides
+import javax.inject.Singleton
 
+
+//@Component(modules = arrayOf(InjectedProducer::class))
 
 @Component
-@Module
-interface MyDaggerComponent {
+interface ProviderComponent {
 
     // Will contain all methods which provides us the objects.
 

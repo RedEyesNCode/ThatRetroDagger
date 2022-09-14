@@ -3,8 +3,7 @@ package com.redeyesncode.thatretrodagger.manualInjection
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.redeyesncode.thatretrodagger.R
-import com.redeyesncode.thatretrodagger.dagger.MyDaggerComponent
-import dagger.internal.DaggerGenerated
+import dagger.internal.DaggerCollections
 
 class ManualInjectionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +12,7 @@ class ManualInjectionActivity : AppCompatActivity() {
 
         // Giving the manual dependency injection to it. by creating objects
         initManualInjection()
+
         initConstructorInjection()
         InjectDagger()
 
@@ -23,7 +23,6 @@ class ManualInjectionActivity : AppCompatActivity() {
         // Builder class is not coming
 
 //        :(
-
 
 
 
