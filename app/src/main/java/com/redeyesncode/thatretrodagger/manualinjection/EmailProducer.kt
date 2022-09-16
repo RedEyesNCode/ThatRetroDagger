@@ -1,8 +1,7 @@
-package com.redeyesncode.thatretrodagger.manualInjection
+package com.redeyesncode.thatretrodagger.manualinjection
 
 import android.util.Log
 import com.redeyesncode.thatretrodagger.Constants
-import javax.inject.Inject
 
 class EmailProducer  {
 

@@ -8,14 +8,10 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 
-//@Module
-class InjectedProducer @Inject constructor() {
-//
-//    @Singleton
-//    @Provides
+class EmailInjectedProducer @Inject constructor() {
+
     fun sendInjectedEmail(email:String ){
         Log.i(Constants.DEV_SHEFALI,"Success Email sended to $email")
-
 
     }
 

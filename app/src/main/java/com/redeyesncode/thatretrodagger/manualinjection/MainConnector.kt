@@ -1,4 +1,4 @@
-package com.redeyesncode.thatretrodagger.manualInjection
+package com.redeyesncode.thatretrodagger.manualinjection
 
 class MainConnector {
 

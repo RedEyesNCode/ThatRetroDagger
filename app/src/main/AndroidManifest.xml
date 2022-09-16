@@ -14,7 +14,7 @@
         android:theme="@style/Theme.ThatRetroDagger"
         tools:targetApi="31">
         <activity
-            android:name=".ManualInjectionActivity"
+            android:name=".manualinjection.ManualInjectionActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

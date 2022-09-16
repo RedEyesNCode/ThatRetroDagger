@@ -3,7 +3,6 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-
 }
 
 android {
@@ -35,6 +34,12 @@ android {
     kapt {
         generateStubs = true
     }
+    buildFeatures {
+        viewBinding true
+    }
+    dataBinding {
+        enabled = true
+    }
 
 }
 
@@ -53,5 +58,9 @@ dependencies {
 
     implementation 'com.google.dagger:dagger:2.43.2'
     kapt 'com.google.dagger:dagger-android-processor:2.15'
+    kapt "com.google.dagger:dagger-compiler:2.15"
+
+
+
 
 }

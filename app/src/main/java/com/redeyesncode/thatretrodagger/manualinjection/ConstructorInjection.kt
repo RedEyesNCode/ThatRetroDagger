@@ -1,4 +1,4 @@
-package com.redeyesncode.thatretrodagger.manualInjection
+package com.redeyesncode.thatretrodagger.manualinjection
 
 class ConstructorInjection(val emailProducer: EmailProducer, val signupProducer: SignupProducer) {
 
